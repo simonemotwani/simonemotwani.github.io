@@ -58,18 +58,31 @@ const StarField: React.FC = () => {
       }
       
       // Bright blue-white stars
-      for (let i = 200; i < 250; i++) {
+      for (let i = 200; i < 270; i++) {
         newStars.push({
           id: i,
           x: Math.random() * 100,
           y: Math.random() * 100,
-          size: Math.random() * 3 + 1,
+          size: Math.random() * 3 + 0.3,
           brightness: Math.random() * 0.4 + 0.6,
           color: '#E6E6FA',
           animationDelay: Math.random() * 2.5,
           duration: Math.random() * 1 + 0.5 // Very fast
         });
       }
+
+      for (let i = 250; i < 270; i++) {
+        newStars.push({
+            id: i,
+            x: Math.random() * 100,
+            y: Math.random() * 100,
+            size: Math.random() * 5 + 3, // Large stars (3-8px)
+            brightness: Math.random() * 0.8 + 0.6,
+            color: '#FFE5B4', // Warm white
+            animationDelay: Math.random() * 2,
+            duration: Math.random() * 2 + 1.5
+        });
+        }
       
       setStars(newStars);
     };
