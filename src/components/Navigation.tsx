@@ -11,7 +11,7 @@ const Navigation: React.FC<NavigationProps> = ({ currentSection, setCurrentSecti
   const navItems = [
     { id: 'home', label: 'Home' },
     { id: 'about', label: 'About' },
-    { id: 'projects', label: 'Projects' },
+    { id: 'projects', label: 'Experience' },
     { id: 'contact', label: 'Contact' }
   ];
 
@@ -28,7 +28,7 @@ const Navigation: React.FC<NavigationProps> = ({ currentSection, setCurrentSecti
           whileHover={{ scale: 1.1 }}
           transition={{ type: "spring", stiffness: 400, damping: 10 }}
         >
-          SM
+          Simone Motwani
         </motion.div>
         
         <ul className="nav-links">
