@@ -11,29 +11,31 @@ const HomeSection: React.FC = () => {
       transition={{ duration: 1 }}
     >
       <div className="hero-content">
-        <motion.h1
+        <motion.h2
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.3, duration: 1, ease: "easeOut" }}
+          style={{ fontSize: '3rem', marginBottom: '4rem',  marginTop: '-7rem', whiteSpace: 'nowrap' }}
         >
-          Simone Motwani
-        </motion.h1>
+          Hey! I am glad to have to here
+        </motion.h2>
         
-        <motion.h2
+        <motion.h1
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.6, duration: 1, ease: "easeOut" }}
         >
-          Full Stack Developer & Problem Solver
-        </motion.h2>
+          Welcome to my portfolio
+
+        </motion.h1>
         
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.9, duration: 1, ease: "easeOut" }}
+          style={{ fontSize: '2rem',marginBottom: '4rem', lineHeight: '1.8' }}
         >
-          Passionate about crafting digital experiences with clean code and creative solutions. 
-          Currently studying Computer Science and always eager to learn new technologies and tackle challenging problems.
+          My name is Simone and I am a computer science student at sfu and let me show what I have been up-to recently
         </motion.p>
         
         <motion.a
@@ -47,8 +49,14 @@ const HomeSection: React.FC = () => {
             y: -3
           }}
           whileTap={{ scale: 0.95 }}
+          
+          style={{ 
+            padding: '1.5rem 3rem', 
+            fontSize: '2rem',
+            borderRadius: '40px'
+          }}
         >
-          Explore My Work
+          Explore my work
         </motion.a>
       </div>
     </motion.section>
