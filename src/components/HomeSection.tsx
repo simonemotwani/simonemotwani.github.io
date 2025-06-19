@@ -2,7 +2,11 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
-const HomeSection: React.FC = () => {
+interface HomeSectionProps {
+  setCurrentSection: (section: string) => void;
+}
+
+const HomeSection: React.FC<HomeSectionProps> = ({ setCurrentSection }) => {
   return (
     <motion.section 
       className="section home-section"
@@ -11,34 +15,35 @@ const HomeSection: React.FC = () => {
       transition={{ duration: 1 }}
     >
       <div className="hero-content">
-        <motion.h1
+        <motion.h2
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.3, duration: 1, ease: "easeOut" }}
+          style={{ fontSize: '3rem', marginBottom: '4rem', marginTop: '-7rem', whiteSpace: 'nowrap' }}
         >
-          Simone Motwani
-        </motion.h1>
+          Hey there! I am glad to have to here
+        </motion.h2>
         
-        <motion.h2
+        <motion.h1
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.6, duration: 1, ease: "easeOut" }}
         >
-          Full Stack Developer & Problem Solver
-        </motion.h2>
+          Welcome to my portfolio
+        </motion.h1>
         
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.9, duration: 1, ease: "easeOut" }}
+          style={{ fontSize: '2rem',marginBottom: '4rem', lineHeight: '1.8' }}
         >
-          Passionate about crafting digital experiences with clean code and creative solutions. 
-          Currently studying Computer Science and always eager to learn new technologies and tackle challenging problems.
+          I'm Simone and I am a computer science student at sfu. Let me show what I have been up-to recently
         </motion.p>
         
-        <motion.a
-          href="#projects"
+        <motion.button
           className="cta-button"
+          onClick={() => setCurrentSection('projects')}
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ delay: 1.2, duration: 0.8, ease: "easeOut" }}
@@ -47,9 +52,14 @@ const HomeSection: React.FC = () => {
             y: -3
           }}
           whileTap={{ scale: 0.95 }}
+          style={{ 
+            padding: '1.5rem 3rem', 
+            fontSize: '2rem',
+            borderRadius: '40px'
+          }}
         >
-          Explore My Work
-        </motion.a>
+          Explore my work
+        </motion.button>
       </div>
     </motion.section>
   );
