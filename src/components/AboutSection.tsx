@@ -112,7 +112,7 @@ const AboutSection: React.FC = () => {
               {/* Image 1 */}
               <motion.img
                 src="/images/activity 1.jpg"
-                alt="Water activity - description here"
+                alt="Simone is sitting on a boat with red life jacket"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.7 }}
@@ -127,7 +127,7 @@ const AboutSection: React.FC = () => {
               {/* Image 2 */}
               <motion.img
                 src="/images/activity 2.jpg"
-                alt="Water activity - description here"
+                alt="Simone is jet skiing in this picture with blue life jacket"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.7 }}
@@ -142,7 +142,7 @@ const AboutSection: React.FC = () => {
               {/* Image 3 */}
               <motion.img
                 src="/images/activity 3.jpg"
-                alt="Water activity - description here"
+                alt="Simone is standing in a zoo with a snake around her neck"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.7 }}
@@ -191,7 +191,7 @@ const AboutSection: React.FC = () => {
           
           <img 
             src="/images/photo.jpg" 
-            alt="Simone Motwani - Profile" 
+            alt="Simone is standing near a lake in black t-shirt and white joggers" 
             style={{
               width: '400px',
               height: '400px',
