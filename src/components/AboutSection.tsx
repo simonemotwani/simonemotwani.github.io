@@ -70,7 +70,7 @@ const AboutSection: React.FC = () => {
             }}
           >
             I'm a third-year computer science student with a strong interest in networking (the computer science kind, not people - they're terrifying). 
-            I'm also passionate about systems programming and web development.
+            I'm also passionate about systems programming and web development. Check out my expereince for details!
           </motion.p>
           
           <motion.p 
@@ -87,7 +87,7 @@ const AboutSection: React.FC = () => {
           >
             That covers the school and work life. Outside of that, I'm pretty adventurous and love water activities, as you can see in the pictures. 
             Fun fact: I don't actually know how to swim, so every time I just hope my life jacket does its job. 
-            I also go hiking sometimes, mostly because it's free and I've already spent my money on expensive water activities.
+            I also go hiking sometimes, mostly because it's free and I've already spent my money on water activities.
           </motion.p>
 
           <motion.div 
@@ -110,70 +110,49 @@ const AboutSection: React.FC = () => {
               flexWrap: 'wrap'
             }}>
               {/* Image 1 */}
-              <motion.div
+              <motion.img
+                src="/images/activity 1.jpg"
+                alt="Water activity - description here"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.7 }}
                 style={{
-                  width: '200px', // Increased from 150px
-                  height: '250px', // Increased from 150px
-                  background: 'rgba(224, 86, 253, 0.1)',
-                  border: '2px dashed #e056fd',
+                  width: '200px',
+                  height: '250px',
                   borderRadius: '10px',
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                  color: '#e056fd',
-                  fontSize: '1.1rem', // Increased font size
-                  fontWeight: '500'
+                  objectFit: 'cover'
                 }}
-              >
-                Image 1
-              </motion.div>
+              />
 
               {/* Image 2 */}
-              <motion.div
+              <motion.img
+                src="/images/activity 2.jpg"
+                alt="Water activity - description here"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.8 }}
+                transition={{ duration: 0.6, delay: 0.7 }}
                 style={{
-                  width: '200px', // Increased from 150px
-                  height: '250px', // Increased from 150px
-                  background: 'rgba(224, 86, 253, 0.1)',
-                  border: '2px dashed #e056fd',
+                  width: '200px',
+                  height: '250px',
                   borderRadius: '10px',
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                  color: '#e056fd',
-                  fontSize: '1.1rem', // Increased font size
-                  fontWeight: '500'
+                  objectFit: 'cover'
                 }}
-              >
-                Image 2
-              </motion.div>
+              />
 
               {/* Image 3 */}
-              <motion.div
+              <motion.img
+                src="/images/activity 3.jpg"
+                alt="Water activity - description here"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.9 }}
+                transition={{ duration: 0.6, delay: 0.7 }}
                 style={{
-                  width: '200px', // Increased from 150px
-                  height: '250px', // Increased from 150px
-                  background: 'rgba(224, 86, 253, 0.1)',
-                  border: '2px dashed #e056fd',
+                  width: '200px',
+                  height: '250px',
                   borderRadius: '10px',
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                  color: '#e056fd',
-                  fontSize: '1.1rem', // Increased font size
-                  fontWeight: '500'
+                  objectFit: 'cover'
                 }}
-              >
-                Image 3
-              </motion.div>
+              />
             </div>
           </motion.div>
         </div>
@@ -190,7 +169,7 @@ const AboutSection: React.FC = () => {
             marginLeft: '2rem'
           }}
         >
-          <div 
+          {/* <div 
             className="profile-placeholder"
             style={{
               width: '400px', // Increased from 400px
@@ -207,11 +186,11 @@ const AboutSection: React.FC = () => {
             }}
           >
             <span>Your Photo Here</span>
-          </div>
+          </div> */}
           {/* Uncomment when you have a real image */}
-          {/* 
+          
           <img 
-            src="/path-to-your-image.jpg" 
+            src="/images/photo.jpg" 
             alt="Simone Motwani - Profile" 
             style={{
               width: '400px',
@@ -222,7 +201,7 @@ const AboutSection: React.FC = () => {
               boxShadow: '0 0 30px rgba(100, 255, 218, 0.3)'
             }}
           />
-          */}
+         
         </motion.div>
       </div>
     </motion.section>
