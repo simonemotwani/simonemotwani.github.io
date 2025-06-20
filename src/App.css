@@ -288,9 +288,9 @@ body {
 
 .about-content {
   display: grid;
-  grid-template-columns: 1fr 300px;
-  gap: 4rem;
-  align-items: center;
+  grid-template-columns: 100fr 1fr;
+  gap: 7rem;
+  align-items: flex-start;
   text-align: left;
 }
 
