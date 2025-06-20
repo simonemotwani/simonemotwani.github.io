@@ -112,7 +112,7 @@ const ProjectsSection: React.FC = () => {
             boxShadow: '0 6px 20px rgba(147, 112, 219, 0.4)'
           }}
         >
-          Download Resume
+          Resume
         </motion.a>
       </div>
 
