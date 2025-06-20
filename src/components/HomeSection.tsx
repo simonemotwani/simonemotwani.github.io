@@ -38,7 +38,7 @@ const HomeSection: React.FC<HomeSectionProps> = ({ setCurrentSection }) => {
           transition={{ delay: 0.9, duration: 1, ease: "easeOut" }}
           style={{ fontSize: '2rem',marginBottom: '4rem', lineHeight: '1.8' }}
         >
-          I'm Simone and I am a computer science student at sfu. Let me show what I have been up-to recently
+          My name is Simone and I am a computer science student at sfu. Let me show what I have been up-to recently
         </motion.p>
         
         <motion.button
