@@ -199,7 +199,208 @@ const ProjectsSection: React.FC = () => {
         </div>
       </motion.div>
 
+      {/* Projects Section */}
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6, delay: 0.6 }}
+      >
+        <h3 style={{
+          color: '#e056fd',
+          fontSize: '2.5rem', // Increased from 2rem
+          marginBottom: '3rem', // Increased spacing
+          textShadow: '0 0 10px rgba(224, 86, 253, 0.5)'
+        }}>
+          Projects
+        </h3>
+        
+        <div style={{
+          display: 'grid',
+          gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
+          gap: '2rem'
+        }}>
+          {projects.map((project, index) => (
+            <motion.div
+              key={index}
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.7 + (index * 0.1) }}
+              whileHover={{
+                y: -5,
+                scale: 1.02,
+                transition: { duration: 0.3 }
+              }}
+              style={{
+                background: 'rgba(26, 11, 46, 0.8)',
+                border: '2px solid rgba(224, 86, 253, 0.3)',
+                borderRadius: '20px',
+                padding: '2rem',
+                cursor: 'pointer',
+                transition: 'all 0.3s ease',
+                textAlign: 'center'
+              }}
+              onClick={() => setSelectedProject(project)}
+            >
+              <h4 style={{
+                color: '#e056fd',
+                fontSize: '1.4rem',
+                fontWeight: 'bold',
+                margin: 0,
+                textShadow: '0 0 10px rgba(224, 86, 253, 0.5)'
+              }}>
+                {project.title}
+              </h4>
+              <p style={{
+                color: '#64ffda',
+                fontSize: '0.9rem',
+                marginTop: '0.5rem',
+                fontStyle: 'italic'
+              }}>
+                Click to view details
+              </p>
+            </motion.div>
+          ))}
+        </div>
 
+      {/* Modal Overlay */}
+      {selectedProject && (
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          style={{
+            position: 'fixed',
+            top: 0,
+            left: 0,
+            right: 0,
+            bottom: 0,
+            background: 'rgba(0, 0, 0, 0.8)',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            zIndex: 1000,
+            padding: '2rem'
+          }}
+          onClick={() => setSelectedProject(null)}
+        >
+          <motion.div
+            initial={{ scale: 0.5, opacity: 0 }}
+            animate={{ scale: 1, opacity: 1 }}
+            exit={{ scale: 0.5, opacity: 0 }}
+            transition={{ type: "spring", duration: 0.5 }}
+            style={{
+              background: 'rgba(26, 11, 46, 0.95)',
+              border: '2px solid #e056fd',
+              borderRadius: '20px',
+              padding: '3rem',
+              maxWidth: '800px',
+              width: '100%',
+              maxHeight: '80vh',
+              overflowY: 'auto',
+              backdropFilter: 'blur(20px)',
+              boxShadow: '0 20px 50px rgba(224, 86, 253, 0.3)'
+            }}
+            onClick={(e) => e.stopPropagation()}
+          >
+            {/* Close Button */}
+            <button
+              onClick={() => setSelectedProject(null)}
+              style={{
+                position: 'absolute',
+                top: '1rem',
+                right: '1rem',
+                background: 'transparent',
+                border: 'none',
+                color: '#e056fd',
+                fontSize: '2rem',
+                cursor: 'pointer',
+                padding: '0.5rem'
+              }}
+            >
+              ×
+            </button>
+
+            {/* Project Details */}
+            <h2 style={{
+              color: '#e056fd',
+              fontSize: '2.5rem',
+              marginBottom: '1rem',
+              textAlign: 'center',
+              textShadow: '0 0 15px rgba(224, 86, 253, 0.7)'
+            }}>
+              {selectedProject.title}
+            </h2>
+
+            <p style={{
+              color: '#64ffda',
+              fontSize: '1.2rem',
+              fontStyle: 'italic',
+              textAlign: 'center',
+              marginBottom: '2rem',
+              fontWeight: '500'
+            }}>
+              {selectedProject.tech}
+            </p>
+
+            <p style={{
+              color: '#f8f8ff',
+              fontSize: '1.2rem',
+              lineHeight: '1.8',
+              marginBottom: '3rem',
+              textAlign: 'center'
+            }}>
+              {selectedProject.description}
+            </p>
+
+            <div style={{
+              display: 'flex',
+              gap: '2rem',
+              justifyContent: 'center'
+            }}>
+              <motion.a
+                href={selectedProject.github}
+                target="_blank"
+                rel="noopener noreferrer"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                style={{
+                  background: 'linear-gradient(45deg, #e056fd, #f39c12)',
+                  color: '#1a0b2e',
+                  textDecoration: 'none',
+                  fontWeight: 'bold',
+                  padding: '1rem 2rem',
+                  borderRadius: '30px',
+                  fontSize: '1.1rem',
+                  boxShadow: '0 5px 15px rgba(224, 86, 253, 0.4)'
+                }}
+              >
+                View on GitHub
+              </motion.a>
+
+              <motion.a
+                href={selectedProject.demo}
+                target="_blank"
+                rel="noopener noreferrer"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                style={{
+                  background: 'linear-gradient(45deg, #e056fd, #f39c12)',
+                  color: '#1a0b2e',
+                  textDecoration: 'none',
+                  fontWeight: 'bold',
+                  padding: '1rem 2rem',
+                  borderRadius: '30px',
+                  fontSize: '1.1rem',
+                  boxShadow: '0 5px 15px rgba(224, 86, 253, 0.4)'
+                }}
+              >
+                Live Demo
+              </motion.a>
+            </div>
+          </motion.div>
+        </motion.div>
+      )}
+      </motion.div>
     </motion.section>
   );
 };
