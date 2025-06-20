@@ -35,23 +35,23 @@ const ProjectsSection: React.FC = () => {
 
   const projects: Project[] = [
     {
-      title: "E-Commerce Platform",
-      description: "A full-stack e-commerce application with user authentication, shopping cart functionality, and payment integration. Features include product catalog, user reviews, and admin dashboard.",
-      tech: "React • Node.js • MongoDB • Stripe API",
+      title: " Deny and Conquer",
+      description: "Designed real‑time network communication system handling concurrent drawing data transmission and game state broadcasting. Developed network concurrency solutions including request queuing, lock management, and multi‑client coordination",
+      tech: "Python • Network Programming • Multi‑threading",
       github: "https://github.com/simonemotwani/ecommerce-app",
       demo: "https://my-ecommerce-demo.netlify.app"
     },
     {
-      title: "Weather Dashboard", 
-      description: "A responsive weather application that provides real-time weather data and forecasts. Features location-based weather, interactive maps, and weather alerts.",
-      tech: "React • OpenWeatherMap API • Chart.js",
+      title: " UNIX Shell Implementation", 
+      description: "Developedafully functional shell program in C that executes user commands, implements process management, and handles signals. Implemented shell features including foreground/background process execution,command history,and built‑in commands (cd,pwd,exit)",
+      tech: "C • Systems Programming",
       github: "https://github.com/simonemotwani/weather-dashboard",
       demo: "https://weather-dashboard-demo.netlify.app"
     },
     {
-      title: "Task Management System",
-      description: "A collaborative project management tool with real-time updates, task assignment, and progress tracking. Built with modern web technologies for optimal performance.",
-      tech: "Python • Django • PostgreSQL • WebSocket",
+      title: "Group Chat Server & Fuzzing Client",
+      description: "Implemented a concurrent TCP/IP server using socket programming to handle multiple client connections simultaneously. Designed and implemented a custom messaging protocol with two‑phase commit for reliable message delivery ",
+      tech: "C • Network Programming • Multi‑threading",
       github: "https://github.com/simonemotwani/task-manager",
       demo: "https://task-manager-demo.herokuapp.com"
     }
@@ -207,8 +207,8 @@ const ProjectsSection: React.FC = () => {
       >
         <h3 style={{
           color: '#e056fd',
-          fontSize: '2.5rem', // Increased from 2rem
-          marginBottom: '3rem', // Increased spacing
+          fontSize: '2.5rem', 
+          marginBottom: '3rem', 
           textShadow: '0 0 10px rgba(224, 86, 253, 0.5)'
         }}>
           Projects
@@ -216,7 +216,7 @@ const ProjectsSection: React.FC = () => {
         
         <div style={{
           display: 'grid',
-          gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
+          gridTemplateColumns: 'repeat(auto-fit, minmax(400px, 1fr))',
           gap: '2rem'
         }}>
           {projects.map((project, index) => (
@@ -312,7 +312,7 @@ const ProjectsSection: React.FC = () => {
                 background: 'transparent',
                 border: 'none',
                 color: '#e056fd',
-                fontSize: '2rem',
+                fontSize: '3rem',
                 cursor: 'pointer',
                 padding: '0.5rem'
               }}
@@ -344,7 +344,7 @@ const ProjectsSection: React.FC = () => {
 
             <p style={{
               color: '#f8f8ff',
-              fontSize: '1.2rem',
+              fontSize: '2rem',
               lineHeight: '1.8',
               marginBottom: '3rem',
               textAlign: 'center'
