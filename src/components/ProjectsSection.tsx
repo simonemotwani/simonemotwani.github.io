@@ -357,45 +357,7 @@ const ProjectsSection: React.FC = () => {
               gap: '2rem',
               justifyContent: 'center'
             }}>
-              <motion.a
-                href={selectedProject.github}
-                target="_blank"
-                rel="noopener noreferrer"
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                style={{
-                  background: 'linear-gradient(45deg, #e056fd, #f39c12)',
-                  color: '#1a0b2e',
-                  textDecoration: 'none',
-                  fontWeight: 'bold',
-                  padding: '1rem 2rem',
-                  borderRadius: '30px',
-                  fontSize: '1.1rem',
-                  boxShadow: '0 5px 15px rgba(224, 86, 253, 0.4)'
-                }}
-              >
-                View on GitHub
-              </motion.a>
-
-              <motion.a
-                href={selectedProject.demo}
-                target="_blank"
-                rel="noopener noreferrer"
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                style={{
-                  background: 'linear-gradient(45deg, #e056fd, #f39c12)',
-                  color: '#1a0b2e',
-                  textDecoration: 'none',
-                  fontWeight: 'bold',
-                  padding: '1rem 2rem',
-                  borderRadius: '30px',
-                  fontSize: '1.1rem',
-                  boxShadow: '0 5px 15px rgba(224, 86, 253, 0.4)'
-                }}
-              >
-                Live Demo
-              </motion.a>
+              
             </div>
           </motion.div>
         </motion.div>
