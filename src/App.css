@@ -9,14 +9,12 @@ body {
   font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background: #0b0b1f;
   color: #ffffff;
-  overflow: hidden;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .App {
   position: relative;
-  height: 100vh;
-  overflow: hidden;
+  min-height: 100vh;
   background: 
     radial-gradient(ellipse 800px 400px at 20% 30%, 
       rgba(147, 39, 143, 0.4) 0%,
@@ -206,7 +204,7 @@ body {
 .main-content {
   position: relative;
   z-index: 10;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;

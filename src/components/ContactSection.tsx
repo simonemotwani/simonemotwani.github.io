@@ -28,33 +28,29 @@ const ContactSection: React.FC = () => {
   const socialLinks = [
     {
       name: 'Email',
-      url: 'mailto:simone.motwani@example.com',
+      url: 'mailto:motwanisimone@gmail.com',
       icon: '📧'
     },
     {
       name: 'LinkedIn',
       url: 'https://linkedin.com/in/simonemotwani',
-      icon: '💼'
+      icon: '🔗'
     },
     {
       name: 'GitHub',
       url: 'https://github.com/simonemotwani',
-      icon: '🐙'
+      icon: '💻'
     },
     {
       name: 'Resume',
       url: '/resume.pdf',
       icon: '📄'
     },
+    
     {
-      name: 'Twitter',
-      url: 'https://twitter.com/simonemotwani',
-      icon: '🐦'
-    },
-    {
-      name: 'Portfolio',
-      url: 'https://simonemotwani.github.io',
-      icon: '🌟'
+      name: 'Instagram',
+      url: 'https://instagram.com/simonemotwani',
+      icon: '📸'
     }
   ];
 
