@@ -43,7 +43,7 @@ const ProjectsSection: React.FC = () => {
     },
     {
       title: " UNIX Shell Implementation", 
-      description: "Developedafully functional shell program in C that executes user commands, implements process management, and handles signals. Implemented shell features including foreground/background process execution,command history,and built‑in commands (cd,pwd,exit)",
+      description: "Developed a fully functional shell program in C that executes user commands, implements process management, and handles signals. Implemented shell features including foreground/background process execution,command history,and built‑in commands (cd,pwd,exit)",
       tech: "C • Systems Programming",
       github: "https://github.com/simonemotwani/weather-dashboard",
       demo: "https://weather-dashboard-demo.netlify.app"

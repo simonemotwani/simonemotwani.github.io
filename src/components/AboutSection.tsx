@@ -85,76 +85,12 @@ const AboutSection: React.FC = () => {
               textShadow: '0 0 5px rgba(255, 255, 255, 0.2)'
             }}
           >
-            That covers the school and work life. Outside of that, I'm pretty adventurous and love water activities, as you can see in the pictures. 
-            Fun fact: I don't actually know how to swim, so every time I just hope my life jacket does its job. 
+            That covers the school and work life. Outside of that, I'm pretty adventurous and love water activities like jet skiing and parasailing. 
+            Fun fact: I don't actually know how to swim, so I just hope my life jacket does its job. 
             I also go hiking sometimes, mostly because it's free and I've already spent my money on water activities.
           </motion.p>
 
-          <motion.div 
-            className="additional-images"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.6 }}
-          >
-            <h3 style={{
-              color: '#e056fd',
-              fontSize: '2rem', // Increased from 1.5rem
-              margin: '3rem 0 2rem 0', // Increased spacing
-              textShadow: '0 0 10px rgba(224, 86, 253, 0.5)'
-            }}>
-              Pictures
-            </h3>
-            <div style={{
-              display: 'flex',
-              gap: '2rem', // Increased gap
-              flexWrap: 'wrap'
-            }}>
-              {/* Image 1 */}
-              <motion.img
-                src="/images/activity 1.jpg"
-                alt="Simone is sitting on a boat with red life jacket"
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.7 }}
-                style={{
-                  width: '200px',
-                  height: '250px',
-                  borderRadius: '10px',
-                  objectFit: 'cover'
-                }}
-              />
-
-              {/* Image 2 */}
-              <motion.img
-                src="/images/activity 2.jpg"
-                alt="Simone is jet skiing in this picture with blue life jacket"
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.7 }}
-                style={{
-                  width: '200px',
-                  height: '250px',
-                  borderRadius: '10px',
-                  objectFit: 'cover'
-                }}
-              />
-
-              {/* Image 3 */}
-              <motion.img
-                src="/images/activity 3.jpg"
-                alt="Simone is standing in a zoo with a snake around her neck"
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.7 }}
-                style={{
-                  width: '200px',
-                  height: '250px',
-                  borderRadius: '10px',
-                  objectFit: 'cover'
-                }}
-              />
-            </div>
-          </motion.div>
+          
         </div>
 
         {/* Photo - separate column on the right */}
