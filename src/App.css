@@ -13,8 +13,11 @@ body {
 }
 
 .App {
+  zoom: 0.7;
+  min-height: 142vh;
+  overflow-x: hidden;
+  overflow-y: hidden;
   position: relative;
-  min-height: 100vh;
   background: 
     radial-gradient(ellipse 800px 400px at 20% 30%, 
       rgba(147, 39, 143, 0.4) 0%,
@@ -222,6 +225,7 @@ body {
 .home-section {
   display: flex;
   flex-direction: column;
+  padding-top: 25vh;
   align-items: center;
   justify-content: center;
   min-height: calc(100vh - 80px);
